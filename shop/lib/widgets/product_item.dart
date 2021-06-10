@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/products.dart';
 import '../views/product_detail_screen.dart';
+import '../utils/app_routes.dart';
 
 class ProductItem extends StatelessWidget {
   
@@ -16,11 +17,14 @@ class ProductItem extends StatelessWidget {
 
         child: GestureDetector(
           onTap: (){
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (cxt) => ProductDetailScreen(product)
-                )
+
+            Navigator.of(context).pushNamed(
+              AppRoutes.PRODUCT_DETAIL,
+              arguments: product,
+
             );
+
+          
           },
           child: Image.network(product.imageUrl,
           fit: BoxFit.cover,

@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import '../models/products.dart';
 import '../data/dummy_data.dart';

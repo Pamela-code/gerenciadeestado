@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop/models/products.dart';
+
 import 'package:shop/utils/app_routes.dart';
 import 'package:provider/provider.dart';
 

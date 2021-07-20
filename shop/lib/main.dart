@@ -15,7 +15,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (_) => Products(),
-
       child: MaterialApp(
         title: 'Minha Loja',
         theme: ThemeData(
@@ -29,5 +28,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
